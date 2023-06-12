@@ -19,17 +19,30 @@ write(addParameters(16, 10) + "\n");
 
 
 
-// Data types..
+
+// ************  Data types in Pike
 
 
 Integer (int): Represents whole numbers, such as -10, 0, 42.
+
 Float (float): Represents floating-point numbers with decimal places, such as 3.14, -0.5, 1.0.
+
 String (string): Represents sequences of characters enclosed in double quotes, such as "Hello", "Pike", "123".
+
 Array (array): Represents an ordered collection of values. Elements in an array can be of any data type, including other arrays.
+
 Mapping (mapping): Represents a set of key-value pairs. Each key in a mapping is unique, and the corresponding value can be accessed using the key.
+
 Object (object): Pike supports object-oriented programming, allowing you to define custom objects with their own properties and methods.
+
 Function (function): Functions in Pike are first-class citizens and can be assigned to variables, passed as arguments, and returned from other functions.
-Mixed (mixed): The mixed data type can hold values of any type. It is often used when a variable needs to store different types of values at different times.
-Void (void): Represents the absence of a value. Functions that do not return a value have the return type void.
-These are some of the commonly used data types in Pike. Pike is a dynamically typed language, meaning that you don't need to explicitly declare the data type of a variable before using it. The type is automatically inferred based on the value assigned to the variable.
-You can learn more about Pike's data types and their usage in the Pike documentation or official resources.
+
+Mixed (mixed): The mixed data type can hold values of any type. 
+It is often used when a variable needs to store different types of values at different times.
+
+Void (void): Represents the absence of a value. 
+
+
+
+
+
