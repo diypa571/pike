@@ -1,5 +1,16 @@
-// Diyar
-// Yes, Pike is another language... but maybe simpler
+Starting with pike...
+1- Downloading pike for linux and installing using make
+https://pike.lysator.liu.se/pub/pike/latest-stable/Pike-v8.0.1738.tar.gz
+
+wget https://pike.lysator.liu.se/pub/pike/latest-stable/Pike-v8.0.1738.tar.gz
+tar -xf Pike-v8.0.1738.tar.gz
+cd Pike-v8.0.1738
+sudo make install
+
+2- The language
+
+// Yes, Pike is another language... I feel Iam programming in C, yes allmost C, maybe simpler.
+
 
 // Starting with the first pike program
 int main() {
@@ -41,6 +52,8 @@ Mixed (mixed): The mixed data type can hold values of any type.
 It is often used when a variable needs to store different types of values at different times.
 
 Void (void): Represents the absence of a value. 
+
+
 
 
 
