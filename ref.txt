@@ -97,3 +97,82 @@ int main() {
 
     return 0;
 }
+
+************Class**********
+2.7 Classes
+class StarTrekSpecies {
+    string speciesName;
+
+    // Konstruktor
+    void create(string name) {
+        speciesName = name;
+    }
+
+    
+    void displayDetails() {
+        write("Species: " + speciesName + "\n");
+        write("Home Planet: " + getHomePlanet() + "\n");
+        write("Faction: " + getFaction() + "\n");
+    }
+
+    // Virtuaela metoder
+    virtual string getHomePlanet() {
+        return "";
+    }
+
+    // Virtual method to get faction (to be overridden by subclasses)
+    virtual string getFaction() {
+        return "";
+    }
+}
+
+class Human extends StarTrekSpecies {
+    string getHomePlanet() {
+        return "Earth";
+    }
+
+    string getFaction() {
+        return "United Federation of Planets";
+    }
+}
+
+class Klingon extends StarTrekSpecies {
+    string getHomePlanet() {
+        return "Qo'noS";
+    }
+
+    string getFaction() {
+        return "Klingon Empire";
+    }
+}
+
+class Cardassian extends StarTrekSpecies {
+    string getHomePlanet() {
+        return "Cardassia Prime";
+    }
+
+    string getFaction() {
+        return "Cardassian Union";
+    }
+}
+
+// Main program
+int main() {
+    // Creating instances of different species
+    Human human = Human();
+    Klingon klingon = Klingon();
+    Cardassian cardassian = Cardassian();
+
+    // Displaying details of each species
+    human.create("Human");
+    human.displayDetails();
+
+    klingon.create("Klingon");
+    klingon.displayDetails();
+
+    cardassian.create("Cardassian");
+    cardassian.displayDetails();
+
+    return 0;
+}
+
