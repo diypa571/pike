@@ -8,10 +8,13 @@ cd Pike-v8.0.1738
 sudo make install
 
 2- The language
-
+2.1 Commments
 // Yes, Pike is another language... I feel Iam programming in C, yes allmost C, maybe simpler.
+/*
+Follow c to catch the pike
+*/
 
-
+2.3  Playing with strings...
 // Starting with the first pike program
 int main() {
     write("My first pike!\n");
@@ -20,6 +23,11 @@ int main() {
 
 
 
+2.4 Run the the pike file..
+pike filename.pike
+
+
+2.5 Functions
 
 // *********** Creating functions ************
 function addParameters(a, b) {
@@ -29,11 +37,10 @@ function addParameters(a, b) {
 write(addParameters(16, 10) + "\n");
 
 
+ 
 
 
-// ************  Data types in Pike
-
-
+2.4 Data types in Pike
 Integer (int): Represents whole numbers, such as -10, 0, 42.
 
 Float (float): Represents floating-point numbers with decimal places, such as 3.14, -0.5, 1.0.
@@ -55,7 +62,38 @@ Void (void): Represents the absence of a value.
 
 
 
+2.5 Variables in pike
+
+int kilo = 25;     
+float pi = 3.14;      
+string name = "GateKeeper";    
+array numbers = ({1, 2, 3}); // Array 
+
+mapping startrek = ([         // Mapping variable
+    "grid": 01,
+    "heading": 101,
+    "destinaton": 200
+]);
 
 
 
+2.6 Example startrek.pike
+mapping startrek = ([
+    "grid": 01,
+    "heading": 101,
+    "destination": 200
+]);
 
+int main() {
+    // Accessing values from the mapping
+    int grid = startrek["grid"];
+    int heading = startrek["heading"];
+    int destination = startrek["destination"];
+
+    // Printing the values
+    write("Grid: " + grid + "\n");
+    write("Heading: " + heading + "\n");
+    write("Destination: " + destination + "\n");
+
+    return 0;
+}
