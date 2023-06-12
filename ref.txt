@@ -1,4 +1,7 @@
 Starting with pike...
+Learning from the docs..
+http://pike.lysator.liu.se/docs/tut/
+
 1- Downloading pike for linux and installing using make
 https://pike.lysator.liu.se/pub/pike/latest-stable/Pike-v8.0.1738.tar.gz
 
